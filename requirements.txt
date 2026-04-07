@@ -7,3 +7,4 @@ matplotlib
 seaborn
 joblib
 plotly
+yfinance==0.2.40
