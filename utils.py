@@ -2,8 +2,8 @@ import os
 import json
 import pickle
 import numpy as np
-import tensorflow as tf
 import streamlit as st
+from keras.models import load_model
 
 # AUTO VALIDATION ARTIFACT LOADER
 def load_artifacts(artifact_dir):
@@ -37,7 +37,7 @@ def load_artifacts(artifact_dir):
 
     # 3. Load model
     try:
-        model = tf.keras.models.load_model(
+        model = load_model(
             os.path.join(artifact_dir, "model.keras")
         )
     except Exception as e:

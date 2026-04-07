@@ -4,7 +4,6 @@ import numpy as np
 import plotly.graph_objects as go
 import yfinance as yf
 from datetime import datetime, timedelta
-import tensorflow as tf
 from utils import load_artifacts
 
 st.set_page_config(
